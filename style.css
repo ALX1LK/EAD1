@@ -1,0 +1,92 @@
+/* Paleta de cores */
+:root {
+    --primary-color: #9fb2db;
+    --secondary-color: #f0f8ff;
+    --text-color: #333;
+    --footer-bg-color: #e7e7e7;
+    --footer-text-color: #ffffff;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Georgia', serif;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Layout de duas colunas para seções principais */
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Seção principal */
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #d7e0a2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid var(--primary-color);
+}
+
+section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Galeria de imagens */
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
